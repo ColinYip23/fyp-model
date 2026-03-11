@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_ErGaIr
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.26142818
+_cell_length_b   6.73400898
+_cell_length_c   7.72532401
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ErGaIr
+_chemical_formula_sum   'Er4 Ga4 Ir4'
+_cell_volume   221.68972671
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.25000000  0.97537490  0.31409941  1
+  Er  Er1  1  0.25000000  0.47537490  0.18590059  1
+  Er  Er2  1  0.75000000  0.02462510  0.68590059  1
+  Er  Er3  1  0.75000000  0.52462510  0.81409941  1
+  Ga  Ga4  1  0.25000000  0.34664746  0.56659885  1
+  Ga  Ga5  1  0.25000000  0.84664746  0.93340115  1
+  Ga  Ga6  1  0.75000000  0.65335254  0.43340115  1
+  Ga  Ga7  1  0.75000000  0.15335254  0.06659885  1
+  Ir  Ir8  1  0.25000000  0.23337570  0.88611032  1
+  Ir  Ir9  1  0.25000000  0.73337570  0.61388968  1
+  Ir  Ir10  1  0.75000000  0.76662430  0.11388968  1
+  Ir  Ir11  1  0.75000000  0.26662430  0.38611032  1

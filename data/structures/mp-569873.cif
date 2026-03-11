@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_La4C2Br5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.26877957
+_cell_length_b   10.26823926
+_cell_length_c   10.26802311
+_cell_angle_alpha   157.37208888
+_cell_angle_beta   132.16961258
+_cell_angle_gamma   53.53114563
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La4C2Br5
+_chemical_formula_sum   'La4 C2 Br5'
+_cell_volume   307.52167235
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.70475410  0.50002038  0.20476960  1
+  La  La1  1  0.33557734  0.83554796  0.49999713  1
+  La  La2  1  0.29518632  0.49994288  0.79512192  1
+  La  La3  1  0.66443946  0.16444998  0.50003150  1
+  C  C4  1  0.53874320  0.03874140  0.50001400  1
+  C  C5  1  0.46124801  0.96125639  0.49997354  1
+  Br  Br6  1  0.94386040  0.66556785  0.27814606  1
+  Br  Br7  1  0.38746840  0.66573196  0.72186432  1
+  Br  Br8  1  0.61254949  0.33429323  0.27817453  1
+  Br  Br9  1  0.05617002  0.33443599  0.72192302  1
+  Br  Br10  1  0.00000326  0.00001198  -0.00001561  1

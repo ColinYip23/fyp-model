@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_DySiRu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.34407646
+_cell_length_b   6.98785418
+_cell_length_c   7.00979702
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DySiRu
+_chemical_formula_sum   'Dy4 Si4 Ru4'
+_cell_volume   212.78780606
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.25000000  0.98288447  0.18641221  1
+  Dy  Dy1  1  0.75000000  0.01711553  0.81358779  1
+  Dy  Dy2  1  0.25000000  0.48288447  0.31358779  1
+  Dy  Dy3  1  0.75000000  0.51711553  0.68641221  1
+  Si  Si4  1  0.25000000  0.30576455  0.89314705  1
+  Si  Si5  1  0.75000000  0.69423545  0.10685295  1
+  Si  Si6  1  0.25000000  0.80576455  0.60685295  1
+  Si  Si7  1  0.75000000  0.19423545  0.39314705  1
+  Ru  Ru8  1  0.75000000  0.84832677  0.43231950  1
+  Ru  Ru9  1  0.25000000  0.15167323  0.56768050  1
+  Ru  Ru10  1  0.75000000  0.34832677  0.06768050  1
+  Ru  Ru11  1  0.25000000  0.65167323  0.93231950  1

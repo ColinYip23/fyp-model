@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_EuInNi5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.22958112
+_cell_length_b   10.22958112
+_cell_length_c   10.22958020
+_cell_angle_alpha   27.62222909
+_cell_angle_beta   27.62222909
+_cell_angle_gamma   27.62222900
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuInNi5
+_chemical_formula_sum   'Eu2 In2 Ni10'
+_cell_volume   203.13658507
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.00000000  -0.00000000  0.00000000  1
+  Eu  Eu1  1  0.50000000  0.50000000  0.50000000  1
+  In  In2  1  0.11037377  0.11037377  0.11037377  1
+  In  In3  1  0.88962623  0.88962623  0.88962623  1
+  Ni  Ni4  1  0.33390895  0.33390895  0.33390895  1
+  Ni  Ni5  1  0.56656741  0.56656741  0.06881534  1
+  Ni  Ni6  1  0.06881534  0.56656741  0.56656741  1
+  Ni  Ni7  1  0.56656741  0.06881534  0.56656741  1
+  Ni  Ni8  1  0.79991916  0.79991916  0.79991916  1
+  Ni  Ni9  1  0.20008084  0.20008084  0.20008084  1
+  Ni  Ni10  1  0.43343259  0.93118466  0.43343259  1
+  Ni  Ni11  1  0.93118466  0.43343259  0.43343259  1
+  Ni  Ni12  1  0.43343259  0.43343259  0.93118466  1
+  Ni  Ni13  1  0.66609105  0.66609105  0.66609105  1

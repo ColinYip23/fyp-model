@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Er3NiGe2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.10566768
+_cell_length_b   11.13978711
+_cell_length_c   11.21153956
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Er3NiGe2
+_chemical_formula_sum   'Er12 Ni4 Ge8'
+_cell_volume   512.77393204
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.25000000  0.37288259  0.05836141  1
+  Er  Er1  1  0.75000000  0.62711741  0.94163859  1
+  Er  Er2  1  0.75000000  0.87288259  0.44163859  1
+  Er  Er3  1  0.25000000  0.12711741  0.55836141  1
+  Er  Er4  1  0.25000000  0.69783861  0.22059885  1
+  Er  Er5  1  0.75000000  0.30216139  0.77940115  1
+  Er  Er6  1  0.75000000  0.19783861  0.27940115  1
+  Er  Er7  1  0.25000000  0.80216139  0.72059885  1
+  Er  Er8  1  0.25000000  0.44416097  0.38072164  1
+  Er  Er9  1  0.75000000  0.55583903  0.61927836  1
+  Er  Er10  1  0.75000000  0.94416097  0.11927836  1
+  Er  Er11  1  0.25000000  0.05583903  0.88072164  1
+  Ni  Ni12  1  0.25000000  0.13370975  0.12893501  1
+  Ni  Ni13  1  0.75000000  0.86629025  0.87106499  1
+  Ni  Ni14  1  0.75000000  0.63370975  0.37106499  1
+  Ni  Ni15  1  0.25000000  0.36629025  0.62893501  1
+  Ge  Ge16  1  0.25000000  0.68755339  0.48288285  1
+  Ge  Ge17  1  0.75000000  0.31244661  0.51711715  1
+  Ge  Ge18  1  0.75000000  0.18755339  0.01711715  1
+  Ge  Ge19  1  0.25000000  0.81244661  0.98288285  1
+  Ge  Ge20  1  0.25000000  0.00416896  0.30763354  1
+  Ge  Ge21  1  0.75000000  0.99583104  0.69236646  1
+  Ge  Ge22  1  0.75000000  0.50416896  0.19236646  1
+  Ge  Ge23  1  0.25000000  0.49583104  0.80763354  1

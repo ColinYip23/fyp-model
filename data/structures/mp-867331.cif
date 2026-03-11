@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_K3InAu5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.61193368
+_cell_length_b   8.43257918
+_cell_length_c   11.11499144
+_cell_angle_alpha   112.26406523
+_cell_angle_beta   104.53967173
+_cell_angle_gamma   90.02555205
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   K3InAu5
+_chemical_formula_sum   'K6 In2 Au10'
+_cell_volume   468.50288363
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.08714370  0.70919046  0.17392149  1
+  K  K1  1  0.58720331  0.96501413  0.17383906  1
+  K  K2  1  0.75020008  0.37140305  0.49990968  1
+  K  K3  1  0.24983062  0.62857748  0.50007520  1
+  K  K4  1  0.41279505  0.03498720  0.82615837  1
+  K  K5  1  0.91285099  0.29079937  0.82609487  1
+  In  In6  1  0.24987354  0.08741601  0.50017272  1
+  In  In7  1  0.75013561  0.91258246  0.49982657  1
+  Au  Au8  1  0.00000514  0.00000942  0.00000367  1
+  Au  Au9  1  0.50000000  0.50000519  -0.00000065  1
+  Au  Au10  1  0.31238458  0.31279703  0.12502554  1
+  Au  Au11  1  0.81280952  0.31276056  0.12534992  1
+  Au  Au12  1  0.14535642  0.18192115  0.28928820  1
+  Au  Au13  1  0.64505473  0.60748798  0.28942768  1
+  Au  Au14  1  0.35494564  0.39251832  0.71058595  1
+  Au  Au15  1  0.85463925  0.81806463  0.71069364  1
+  Au  Au16  1  0.18719754  0.68723845  0.87465108  1
+  Au  Au17  1  0.68758126  0.68722611  0.87498400  1

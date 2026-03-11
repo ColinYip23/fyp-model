@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Er2(Ga3Ru)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.37154423
+_cell_length_b   7.37154423
+_cell_length_c   9.62642077
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   118.88780821
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Er2(Ga3Ru)3
+_chemical_formula_sum   'Er4 Ga18 Ru6'
+_cell_volume   458.00618927
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.99797680  0.67569674  0.25000000  1
+  Er  Er1  1  0.00202320  0.32430326  0.75000000  1
+  Er  Er2  1  0.67569674  0.99797680  0.25000000  1
+  Er  Er3  1  0.32430326  0.00202320  0.75000000  1
+  Ga  Ga4  1  0.13301908  0.13301908  0.25000000  1
+  Ga  Ga5  1  0.86698092  0.86698092  0.75000000  1
+  Ga  Ga6  1  0.01117013  0.33849669  0.07728228  1
+  Ga  Ga7  1  0.98882987  0.66150331  0.92271772  1
+  Ga  Ga8  1  0.98882987  0.66150331  0.57728228  1
+  Ga  Ga9  1  0.33849669  0.01117013  0.42271772  1
+  Ga  Ga10  1  0.01117013  0.33849669  0.42271772  1
+  Ga  Ga11  1  0.66150331  0.98882987  0.57728228  1
+  Ga  Ga12  1  0.66150331  0.98882987  0.92271772  1
+  Ga  Ga13  1  0.33849669  0.01117013  0.07728228  1
+  Ga  Ga14  1  0.33851650  0.33851650  0.56373400  1
+  Ga  Ga15  1  0.66148350  0.66148350  0.43626600  1
+  Ga  Ga16  1  0.66148350  0.66148350  0.06373400  1
+  Ga  Ga17  1  0.33851650  0.33851650  0.93626600  1
+  Ga  Ga18  1  0.33971313  0.55522936  0.25000000  1
+  Ga  Ga19  1  0.66028687  0.44477064  0.75000000  1
+  Ga  Ga20  1  0.55522936  0.33971313  0.25000000  1
+  Ga  Ga21  1  0.44477064  0.66028687  0.75000000  1
+  Ru  Ru22  1  0.67715421  0.32284579  -0.00000000  1
+  Ru  Ru23  1  0.32284579  0.67715421  -0.00000000  1
+  Ru  Ru24  1  0.32284579  0.67715421  0.50000000  1
+  Ru  Ru25  1  0.67715421  0.32284579  0.50000000  1
+  Ru  Ru26  1  0.00000000  0.00000000  -0.00000000  1
+  Ru  Ru27  1  0.00000000  0.00000000  0.50000000  1

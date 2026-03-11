@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Dy12Co5Bi
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.30576987
+_cell_length_b   8.30576263
+_cell_length_c   8.30576357
+_cell_angle_alpha   111.03472639
+_cell_angle_beta   110.30930782
+_cell_angle_gamma   107.09638289
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Dy12Co5Bi
+_chemical_formula_sum   'Dy12 Co5 Bi1'
+_cell_volume   440.49528882
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.81814381  0.71189958  0.53004535  1
+  Dy  Dy1  1  0.18185596  0.28810169  0.46995861  1
+  Dy  Dy2  1  0.18185449  0.71190029  0.89375669  1
+  Dy  Dy3  1  0.81814291  0.28810251  0.10624641  1
+  Dy  Dy4  1  0.68964099  0.38117954  0.69153883  1
+  Dy  Dy5  1  0.31036368  0.61881409  0.30844952  1
+  Dy  Dy6  1  0.68964092  0.99810465  0.30846327  1
+  Dy  Dy7  1  0.31036397  0.00191419  0.69155019  1
+  Dy  Dy8  1  0.59470784  0.79194521  0.80276270  1
+  Dy  Dy9  1  0.40529267  0.20804630  0.19724674  1
+  Dy  Dy10  1  0.98918454  0.79194807  0.19723736  1
+  Dy  Dy11  1  0.01080229  0.20804851  0.80275360  1
+  Co  Co12  1  0.61863156  -0.00000611  0.61863913  1
+  Co  Co13  1  0.38135484  -0.00000681  0.38136358  1
+  Co  Co14  1  0.10969712  0.60969530  0.49999948  1
+  Co  Co15  1  0.89032084  0.39032001  0.50000291  1
+  Co  Co16  1  -0.00000036  -0.00001108  0.99998681  1
+  Bi  Bi17  1  0.50000192  0.50000204  0.00000081  1

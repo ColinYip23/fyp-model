@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_EuIn4Ir
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.83176202
+_cell_length_b   8.83176202
+_cell_length_c   7.44369662
+_cell_angle_alpha   90.00009354
+_cell_angle_beta   89.99990646
+_cell_angle_gamma   150.41747678
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuIn4Ir
+_chemical_formula_sum   'Eu2 In8 Ir2'
+_cell_volume   286.63283814
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.62624457  0.37375543  0.75000000  1
+  Eu  Eu1  1  0.37376450  0.62623550  0.24999900  1
+  In  In2  1  0.81420848  0.18579152  0.95124364  1
+  In  In3  1  0.18577291  0.81422709  0.04869059  1
+  In  In4  1  0.81420948  0.18579052  0.54875736  1
+  In  In5  1  0.18577291  0.81422709  0.45130941  1
+  In  In6  1  0.43124132  0.56875868  0.75000000  1
+  In  In7  1  0.56877736  0.43122264  0.25000000  1
+  In  In8  1  0.00000747  -0.00000747  0.00000575  1
+  In  In9  1  0.00000747  -0.00000747  0.49999325  1
+  Ir  Ir10  1  0.27520687  0.72479313  0.75000000  1
+  Ir  Ir11  1  0.72478666  0.27521334  0.25000100  1

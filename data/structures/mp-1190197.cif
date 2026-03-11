@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Er7(TeAu)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.18659026
+_cell_length_b   9.18659026
+_cell_length_c   16.99868514
+_cell_angle_alpha   76.06572997
+_cell_angle_beta   76.06572997
+_cell_angle_gamma   25.14112621
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Er7(TeAu)2
+_chemical_formula_sum   'Er14 Te4 Au4'
+_cell_volume   590.63788966
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.00140600  0.00140600  0.66625071  1
+  Er  Er1  1  0.99859400  0.99859400  0.33374929  1
+  Er  Er2  1  0.17429483  0.17429483  0.47151033  1
+  Er  Er3  1  0.82570517  0.82570517  0.52848967  1
+  Er  Er4  1  0.19068614  0.19068614  0.67972812  1
+  Er  Er5  1  0.80931386  0.80931386  0.32027188  1
+  Er  Er6  1  0.33805320  0.33805320  0.98258393  1
+  Er  Er7  1  0.66194680  0.66194680  0.01741607  1
+  Er  Er8  1  0.57485750  0.57485750  0.83005807  1
+  Er  Er9  1  0.42514250  0.42514250  0.16994193  1
+  Er  Er10  1  0.77925147  0.77925147  0.80678967  1
+  Er  Er11  1  0.22074853  0.22074853  0.19321033  1
+  Er  Er12  1  0.50000000  0.50000000  0.50000000  1
+  Er  Er13  1  -0.00000000  -0.00000000  0.00000000  1
+  Te  Te14  1  0.06562105  0.06562105  0.14962891  1
+  Te  Te15  1  0.93437895  0.93437895  0.85037109  1
+  Te  Te16  1  0.36586346  0.36586346  0.66144134  1
+  Te  Te17  1  0.63413654  0.63413654  0.33855866  1
+  Au  Au18  1  0.17024079  0.17024079  0.88789660  1
+  Au  Au19  1  0.82975921  0.82975921  0.11210340  1
+  Au  Au20  1  0.38285400  0.38285400  0.39774234  1
+  Au  Au21  1  0.61714600  0.61714600  0.60225766  1

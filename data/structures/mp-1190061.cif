@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Eu5Si3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.82552156
+_cell_length_b   7.82551404
+_cell_length_c   9.27899399
+_cell_angle_alpha   114.93048641
+_cell_angle_beta   114.93050785
+_cell_angle_gamma   89.99684435
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu5Si3
+_chemical_formula_sum   'Eu10 Si6'
+_cell_volume   456.24035895
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.03172615  0.53172775  0.70819483  1
+  Eu  Eu1  1  0.67664186  0.17663730  0.70816206  1
+  Eu  Eu2  1  0.17663928  0.03166869  0.70817211  1
+  Eu  Eu3  1  0.53167103  0.67664464  0.70817337  1
+  Eu  Eu4  1  0.96827385  0.46827225  0.29180517  1
+  Eu  Eu5  1  0.32335814  0.82336270  0.29183794  1
+  Eu  Eu6  1  0.82336072  0.96833131  0.29182789  1
+  Eu  Eu7  1  0.46832897  0.32335536  0.29182663  1
+  Eu  Eu8  1  0.50000000  0.50000000  0.00000000  1
+  Eu  Eu9  1  0.00000000  0.00000000  0.00000000  1
+  Si  Si10  1  0.39113723  0.89113805  -0.00000177  1
+  Si  Si11  1  0.60886277  0.10886195  0.00000177  1
+  Si  Si12  1  0.10884905  0.39115034  0.00000001  1
+  Si  Si13  1  0.89115095  0.60884966  -0.00000001  1
+  Si  Si14  1  0.25001216  0.24998776  0.50000061  1
+  Si  Si15  1  0.74998784  0.75001224  0.49999939  1

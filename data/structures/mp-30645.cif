@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_HoGa4Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.06200702
+_cell_length_b   6.50208074
+_cell_length_c   7.81583623
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   105.06161048
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoGa4Ni
+_chemical_formula_sum   'Ho2 Ga8 Ni2'
+_cell_volume   199.33651208
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.11950734  0.75000000  0.23901269  1
+  Ho  Ho1  1  0.88049266  0.25000000  0.76098731  1
+  Ga  Ga2  1  0.68578691  0.44825579  0.37157282  1
+  Ga  Ga3  1  0.92932623  0.75000000  0.85865147  1
+  Ga  Ga4  1  0.50000000  0.00000000  -0.00000000  1
+  Ga  Ga5  1  0.31421409  0.55174421  0.62842718  1
+  Ga  Ga6  1  0.50000000  0.50000000  -0.00000000  1
+  Ga  Ga7  1  0.31421409  0.94825579  0.62842718  1
+  Ga  Ga8  1  0.68578691  0.05174421  0.37157282  1
+  Ga  Ga9  1  0.07067377  0.25000000  0.14134853  1
+  Ni  Ni10  1  0.22429803  0.25000000  0.44859606  1
+  Ni  Ni11  1  0.77570197  0.75000000  0.55140394  1

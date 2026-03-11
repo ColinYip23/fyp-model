@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_DySiNi
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.13959062
+_cell_length_b   6.85209853
+_cell_length_c   7.10998766
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DySiNi
+_chemical_formula_sum   'Dy4 Si4 Ni4'
+_cell_volume   201.67396670
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.75000000  0.00979393  0.29843414  1
+  Dy  Dy1  1  0.25000000  0.99020607  0.70156586  1
+  Dy  Dy2  1  0.25000000  0.49020607  0.79843414  1
+  Dy  Dy3  1  0.75000000  0.50979393  0.20156586  1
+  Si  Si4  1  0.75000000  0.69182501  0.58907068  1
+  Si  Si5  1  0.25000000  0.30817499  0.41092932  1
+  Si  Si6  1  0.25000000  0.80817499  0.08907068  1
+  Si  Si7  1  0.75000000  0.19182501  0.91092932  1
+  Ni  Ni8  1  0.75000000  0.81567003  0.91946869  1
+  Ni  Ni9  1  0.25000000  0.18432997  0.08053131  1
+  Ni  Ni10  1  0.25000000  0.68432997  0.41946869  1
+  Ni  Ni11  1  0.75000000  0.31567003  0.58053131  1

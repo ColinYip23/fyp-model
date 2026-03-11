@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Cs2Pb(ICl)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.76779500
+_cell_length_b   5.76779500
+_cell_length_c   19.48561900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Cs2Pb(ICl)2
+_chemical_formula_sum   'Cs4 Pb2 I4 Cl4'
+_cell_volume   648.23703433
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.00000000  0.00000000  0.36864500  1
+  Cs  Cs1  1  0.00000000  0.00000000  0.63135500  1
+  Cs  Cs2  1  0.50000000  0.50000000  0.86864500  1
+  Cs  Cs3  1  0.50000000  0.50000000  0.13135500  1
+  Pb  Pb4  1  0.50000000  0.50000000  0.50000000  1
+  Pb  Pb5  1  0.00000000  0.00000000  0.00000000  1
+  I  I6  1  0.50000000  0.50000000  0.66632800  1
+  I  I7  1  0.50000000  0.50000000  0.33367200  1
+  I  I8  1  0.00000000  0.00000000  0.16632800  1
+  I  I9  1  0.00000000  0.00000000  0.83367200  1
+  Cl  Cl10  1  0.50000000  0.00000000  0.50000000  1
+  Cl  Cl11  1  0.00000000  0.50000000  0.50000000  1
+  Cl  Cl12  1  0.00000000  0.50000000  0.00000000  1
+  Cl  Cl13  1  0.50000000  0.00000000  0.00000000  1

@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_EuSnPd
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.75414357
+_cell_length_b   7.56904078
+_cell_length_c   7.94181366
+_cell_angle_alpha   89.99273747
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuSnPd
+_chemical_formula_sum   'Eu4 Sn4 Pd4'
+_cell_volume   285.78065472
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.25000000  0.52131049  0.81167517  1
+  Eu  Eu1  1  0.75000000  0.47868951  0.18832483  1
+  Eu  Eu2  1  0.25000000  0.02130748  0.68833315  1
+  Eu  Eu3  1  0.75000000  0.97869252  0.31166685  1
+  Sn  Sn4  1  0.25000000  0.17010962  0.07936660  1
+  Sn  Sn5  1  0.75000000  0.32988795  0.57935046  1
+  Sn  Sn6  1  0.25000000  0.67011205  0.42064954  1
+  Sn  Sn7  1  0.75000000  0.82989038  0.92063340  1
+  Pd  Pd8  1  0.75000000  0.20094825  0.90210984  1
+  Pd  Pd9  1  0.25000000  0.29906600  0.40207211  1
+  Pd  Pd10  1  0.75000000  0.70093400  0.59792789  1
+  Pd  Pd11  1  0.25000000  0.79905175  0.09789016  1

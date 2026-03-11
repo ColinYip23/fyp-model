@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_HoSiRh
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.22006611
+_cell_length_b   6.85029865
+_cell_length_c   7.34200967
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoSiRh
+_chemical_formula_sum   'Ho4 Si4 Rh4'
+_cell_volume   212.24805169
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.25000000  0.49831748  0.30975870  1
+  Ho  Ho1  1  0.75000000  0.50168252  0.69024130  1
+  Ho  Ho2  1  0.25000000  0.99831748  0.19024130  1
+  Ho  Ho3  1  0.75000000  0.00168252  0.80975870  1
+  Si  Si4  1  0.25000000  0.29609738  0.89516019  1
+  Si  Si5  1  0.75000000  0.70390262  0.10483981  1
+  Si  Si6  1  0.25000000  0.79609738  0.60483981  1
+  Si  Si7  1  0.75000000  0.20390262  0.39516019  1
+  Rh  Rh8  1  0.75000000  0.84709198  0.43211103  1
+  Rh  Rh9  1  0.25000000  0.15290802  0.56788897  1
+  Rh  Rh10  1  0.75000000  0.34709198  0.06788897  1
+  Rh  Rh11  1  0.25000000  0.65290802  0.93211103  1

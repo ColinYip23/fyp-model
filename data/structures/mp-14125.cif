@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Ho2(Ga3Co)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.25727491
+_cell_length_b   7.25726640
+_cell_length_c   9.33950475
+_cell_angle_alpha   90.00678923
+_cell_angle_beta   90.00683709
+_cell_angle_gamma   119.75631953
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho2(Ga3Co)3
+_chemical_formula_sum   'Ho4 Ga18 Co6'
+_cell_volume   427.03383020
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.33154205  0.00239571  0.74998771  1
+  Ho  Ho1  1  0.00236379  0.33152188  0.74998730  1
+  Ho  Ho2  1  0.66847835  0.99763634  0.25001248  1
+  Ho  Ho3  1  0.99760576  0.66845957  0.25001202  1
+  Ga  Ga4  1  0.66571172  -0.00138464  0.92939494  1
+  Ga  Ga5  1  0.33421433  0.00133970  0.42940452  1
+  Ga  Ga6  1  0.00135622  0.33422098  0.42940421  1
+  Ga  Ga7  1  0.33426868  0.00137150  0.07061342  1
+  Ga  Ga8  1  -0.00137073  0.66573106  0.92938598  1
+  Ga  Ga9  1  0.00138535  0.33428769  0.07060500  1
+  Ga  Ga10  1  0.33462808  0.33464061  0.55881206  1
+  Ga  Ga11  1  0.33474057  0.33471645  0.94115940  1
+  Ga  Ga12  1  0.66528137  0.66525744  0.05884059  1
+  Ga  Ga13  1  0.66536012  0.66537269  0.44118811  1
+  Ga  Ga14  1  0.87773445  0.87772661  0.74995673  1
+  Ga  Ga15  1  0.12227322  0.12226596  0.25004278  1
+  Ga  Ga16  1  0.33580262  0.54880885  0.25002331  1
+  Ga  Ga17  1  0.54878159  0.33580730  0.25003409  1
+  Ga  Ga18  1  0.66419357  0.45121928  0.74996543  1
+  Ga  Ga19  1  0.45119169  0.66419811  0.74997618  1
+  Ga  Ga20  1  0.66577961  -0.00135585  0.57059549  1
+  Ga  Ga21  1  -0.00133940  0.66578625  0.57059553  1
+  Co  Co22  1  0.32892383  0.67107647  -0.00000011  1
+  Co  Co23  1  0.67109367  0.32890724  0.49999983  1
+  Co  Co24  1  0.67108375  0.32891665  -0.00000027  1
+  Co  Co25  1  0.32891352  0.67108728  0.49999981  1
+  Co  Co26  1  -0.00000076  -0.00000815  0.00000242  1
+  Co  Co27  1  0.00000198  -0.00000095  0.50000005  1

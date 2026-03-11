@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_DyGaCo
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.39578214
+_cell_length_b   6.73157671
+_cell_length_c   7.01931936
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyGaCo
+_chemical_formula_sum   'Dy4 Ga4 Co4'
+_cell_volume   207.70548312
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.25000000  0.19498626  0.52612554  1
+  Dy  Dy1  1  0.25000000  0.30501374  0.02612554  1
+  Dy  Dy2  1  0.75000000  0.69498626  0.97387446  1
+  Dy  Dy3  1  0.75000000  0.80501374  0.47387446  1
+  Ga  Ga4  1  0.25000000  0.89007940  0.19370083  1
+  Ga  Ga5  1  0.75000000  0.39007940  0.30629917  1
+  Ga  Ga6  1  0.25000000  0.60992060  0.69370083  1
+  Ga  Ga7  1  0.75000000  0.10992060  0.80629917  1
+  Co  Co8  1  0.25000000  0.93753086  0.85042823  1
+  Co  Co9  1  0.25000000  0.56246914  0.35042823  1
+  Co  Co10  1  0.75000000  0.06246914  0.14957177  1
+  Co  Co11  1  0.75000000  0.43753086  0.64957177  1

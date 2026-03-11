@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_DyCoB4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.39546406
+_cell_length_b   5.88527890
+_cell_length_c   11.39915091
+_cell_angle_alpha   90.00005067
+_cell_angle_beta   89.99997797
+_cell_angle_gamma   90.00001555
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyCoB4
+_chemical_formula_sum   'Dy4 Co4 B16'
+_cell_volume   227.79211648
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.50000020  0.37315146  0.15024222  1
+  Dy  Dy1  1  0.50000029  0.62684762  0.84977002  1
+  Dy  Dy2  1  0.50000018  0.12684685  0.65021885  1
+  Dy  Dy3  1  0.50000018  0.87315376  0.34976919  1
+  Co  Co4  1  0.49999785  0.36656910  0.41143487  1
+  Co  Co5  1  0.50000119  0.63343247  0.58856211  1
+  Co  Co6  1  0.49999812  0.13343188  0.91143315  1
+  Co  Co7  1  0.49999806  0.86656176  0.08857017  1
+  B  B8  1  -0.00000010  0.11200044  0.04620560  1
+  B  B9  1  -0.00000013  0.88799991  0.95380622  1
+  B  B10  1  0.00000016  0.38800113  0.54618985  1
+  B  B11  1  0.00000000  0.61200225  0.45379884  1
+  B  B12  1  -0.00000005  0.13931855  0.46720986  1
+  B  B13  1  0.00000019  0.86068512  0.53277542  1
+  B  B14  1  0.00000003  0.36068238  0.96722266  1
+  B  B15  1  -0.00000003  0.63931912  0.03279078  1
+  B  B16  1  0.00000075  0.02205529  0.19000683  1
+  B  B17  1  0.00000069  0.97794484  0.80999769  1
+  B  B18  1  0.00000115  0.47794211  0.68999457  1
+  B  B19  1  0.00000065  0.52205530  0.31000078  1
+  B  B20  1  0.00000009  0.21734225  0.31600940  1
+  B  B21  1  0.00000047  0.78265749  0.68398610  1
+  B  B22  1  0.00000003  0.28265639  0.81600663  1
+  B  B23  1  0.00000003  0.71734153  0.18399918  1

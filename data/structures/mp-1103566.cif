@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_K4ZnBi2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.14371977
+_cell_length_b   6.14371977
+_cell_length_c   17.55191932
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.19076570
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   K4ZnBi2
+_chemical_formula_sum   'K8 Zn2 Bi4'
+_cell_volume   578.36499372
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.22785412  0.89527957  0.89691243  1
+  K  K1  1  0.89527957  0.22785412  0.10308757  1
+  K  K2  1  0.77214588  0.10472043  0.39691243  1
+  K  K3  1  0.10472043  0.77214588  0.60308757  1
+  K  K4  1  0.56660551  0.56660551  0.00000000  1
+  K  K5  1  0.43339449  0.43339449  0.50000000  1
+  K  K6  1  0.50102686  0.49897314  0.75000000  1
+  K  K7  1  0.49897314  0.50102686  0.25000000  1
+  Zn  Zn8  1  0.83533690  0.16466310  0.75000000  1
+  Zn  Zn9  1  0.16466310  0.83533690  0.25000000  1
+  Bi  Bi10  1  0.89723661  0.23685675  0.89375253  1
+  Bi  Bi11  1  0.23685675  0.89723661  0.10624747  1
+  Bi  Bi12  1  0.10276339  0.76314325  0.39375253  1
+  Bi  Bi13  1  0.76314325  0.10276339  0.60624747  1

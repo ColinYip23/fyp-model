@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_GdGa2Co
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.04066547
+_cell_length_b   4.06682650
+_cell_length_c   9.01497446
+_cell_angle_alpha   103.00465308
+_cell_angle_beta   90.00028521
+_cell_angle_gamma   89.99656301
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdGa2Co
+_chemical_formula_sum   'Gd2 Ga4 Co2'
+_cell_volume   144.34070743
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.00200686  0.14347436  0.28450260  1
+  Gd  Gd1  1  0.00195883  0.85759452  0.71460937  1
+  Ga  Ga2  1  0.50208834  0.29255990  0.58347768  1
+  Ga  Ga3  1  0.50197650  0.70851110  0.41535132  1
+  Ga  Ga4  1  0.00173355  0.50190580  0.00034934  1
+  Ga  Ga5  1  0.50225489  0.00257682  0.00036830  1
+  Co  Co6  1  0.50168090  0.42951951  0.85382673  1
+  Co  Co7  1  0.50176214  0.57536899  0.14669266  1

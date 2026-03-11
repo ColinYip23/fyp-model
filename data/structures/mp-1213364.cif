@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Gd2(Al3Rh)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.51749686
+_cell_length_b   7.51749686
+_cell_length_c   9.46669435
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.29324310
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Gd2(Al3Rh)3
+_chemical_formula_sum   'Gd4 Al18 Rh6'
+_cell_volume   466.57835463
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.99462197  0.67190120  0.25000000  1
+  Gd  Gd1  1  0.00537803  0.32809880  0.75000000  1
+  Gd  Gd2  1  0.67190120  0.99462197  0.25000000  1
+  Gd  Gd3  1  0.32809880  0.00537803  0.75000000  1
+  Al  Al4  1  0.13017481  0.13017481  0.25000000  1
+  Al  Al5  1  0.86982519  0.86982519  0.75000000  1
+  Al  Al6  1  0.00198454  0.33571015  0.07388787  1
+  Al  Al7  1  0.99801546  0.66428985  0.92611213  1
+  Al  Al8  1  0.99801546  0.66428985  0.57388787  1
+  Al  Al9  1  0.33571015  0.00198454  0.42611213  1
+  Al  Al10  1  0.00198454  0.33571015  0.42611213  1
+  Al  Al11  1  0.66428985  0.99801546  0.57388787  1
+  Al  Al12  1  0.66428985  0.99801546  0.92611213  1
+  Al  Al13  1  0.33571015  0.00198454  0.07388787  1
+  Al  Al14  1  0.33373757  0.33373757  0.54632538  1
+  Al  Al15  1  0.66626243  0.66626243  0.45367462  1
+  Al  Al16  1  0.66626243  0.66626243  0.04632538  1
+  Al  Al17  1  0.33373757  0.33373757  0.95367462  1
+  Al  Al18  1  0.33997289  0.54911810  0.25000000  1
+  Al  Al19  1  0.66002711  0.45088190  0.75000000  1
+  Al  Al20  1  0.54911810  0.33997289  0.25000000  1
+  Al  Al21  1  0.45088190  0.66002711  0.75000000  1
+  Rh  Rh22  1  0.67199983  0.32800017  -0.00000000  1
+  Rh  Rh23  1  0.32800017  0.67199983  -0.00000000  1
+  Rh  Rh24  1  0.32800017  0.67199983  0.50000000  1
+  Rh  Rh25  1  0.67199983  0.32800017  0.50000000  1
+  Rh  Rh26  1  -0.00000000  0.00000000  -0.00000000  1
+  Rh  Rh27  1  -0.00000000  0.00000000  0.50000000  1

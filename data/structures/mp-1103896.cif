@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Gd3BiO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.94906253
+_cell_length_b   6.94906253
+_cell_length_c   11.90135165
+_cell_angle_alpha   62.68651930
+_cell_angle_beta   62.68651930
+_cell_angle_gamma   33.08890645
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Gd3BiO3
+_chemical_formula_sum   'Gd6 Bi2 O6'
+_cell_volume   275.47598828
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.12115405  0.12115405  0.56041819  1
+  Gd  Gd1  1  0.87884595  0.87884595  0.43958181  1
+  Gd  Gd2  1  0.34617559  0.34617559  0.20481981  1
+  Gd  Gd3  1  0.65382441  0.65382441  0.79518019  1
+  Gd  Gd4  1  0.87091765  0.87091765  0.90268438  1
+  Gd  Gd5  1  0.12908235  0.12908235  0.09731562  1
+  Bi  Bi6  1  0.38060562  0.38060562  0.68010091  1
+  Bi  Bi7  1  0.61939438  0.61939438  0.31989909  1
+  O  O8  1  0.30999369  0.30999369  0.40863460  1
+  O  O9  1  0.69000631  0.69000631  0.59136540  1
+  O  O10  1  0.33804370  0.33804370  0.01312786  1
+  O  O11  1  0.66195630  0.66195630  0.98687214  1
+  O  O12  1  0.93696982  0.93696982  0.19530166  1
+  O  O13  1  0.06303018  0.06303018  0.80469834  1

@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Ba2ReN3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.63234452
+_cell_length_b   11.83734049
+_cell_length_c   13.36084660
+_cell_angle_alpha   89.99866484
+_cell_angle_beta   89.99949777
+_cell_angle_gamma   153.17140901
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba2ReN3
+_chemical_formula_sum   'Ba8 Re4 N12'
+_cell_volume   473.41559040
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.50001916  0.06527622  0.86635971  1
+  Ba  Ba1  1  0.49978000  0.56515824  0.63377076  1
+  Ba  Ba2  1  0.49998149  0.93472442  0.13367157  1
+  Ba  Ba3  1  0.50021960  0.43484835  0.36619777  1
+  Ba  Ba4  1  0.50000377  0.85996337  0.58233469  1
+  Ba  Ba5  1  0.50022098  0.36006853  0.91772169  1
+  Ba  Ba6  1  0.50000233  0.14005169  0.41763894  1
+  Ba  Ba7  1  0.49977109  0.63993459  0.08230009  1
+  Re  Re8  1  0.50008080  0.23961761  0.66341410  1
+  Re  Re9  1  0.50018320  0.73967572  0.83671240  1
+  Re  Re10  1  0.49992412  0.76037452  0.33657861  1
+  Re  Re11  1  0.49982102  0.26031554  0.16329607  1
+  N  N12  1  0.00021971  0.51467194  0.75002109  1
+  N  N13  1  -0.00020482  0.48533487  0.24997908  1
+  N  N14  1  0.49956789  0.09030511  0.62436291  1
+  N  N15  1  0.50022108  0.59063370  0.87576819  1
+  N  N16  1  0.50043531  0.90969401  0.37560721  1
+  N  N17  1  0.49977377  0.40936249  0.12426742  1
+  N  N18  1  0.50020959  0.16239395  0.05328410  1
+  N  N19  1  0.49997440  0.66228464  0.44659358  1
+  N  N20  1  0.49979175  0.83760655  0.94672473  1
+  N  N21  1  0.50002294  0.33771494  0.55339500  1
+  N  N22  1  0.00011981  0.01481361  0.75008754  1
+  N  N23  1  -0.00013698  0.98517641  0.24991275  1
