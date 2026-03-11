@@ -33,21 +33,25 @@ def gaussian_distance(distances: np.ndarray, centers: np.ndarray, width: float) 
 
 class GNoMEDataset(Dataset):
     """
-    PyTorch Geometric dataset for GNoME crystal structures.
+    PyTorch Geometric dataset for crystal structures.
+
+    Supports:
+    - training/evaluation mode: CSV contains material_id + target column
+    - inference mode: CSV contains only material_id
 
     Each graph:
     - nodes: atoms
     - node features: atomic number
     - edges: neighbor pairs within cutoff radius
     - edge features: Gaussian-expanded distances
-    - target: formation energy per atom
+    - target: formation energy per atom (optional in inference mode)
     """
 
     def __init__(
         self,
         csv_path: str,
         cif_dir: str,
-        n_samples: int = 10000,
+        n_samples: Optional[int] = None,
         cutoff: float = 6.0,
         max_neighbors: int = 12,
         radius_gaussians: int = 50,
@@ -62,32 +66,37 @@ class GNoMEDataset(Dataset):
         self.max_neighbors = max_neighbors
         self.seed = seed
 
-        self.gaussian_centers = np.linspace(0, cutoff, radius_gaussians)
-        self.gaussian_width = self.gaussian_centers[1] - self.gaussian_centers[0] if radius_gaussians > 1 else 0.2
-
-        df = pd.read_csv(csv_path)
-
-        # Adjust these column names if your CSV differs.
         self.id_col = "material_id"
         self.target_col = "formation_energy_per_atom"
 
-        required = [self.id_col, self.target_col]
-        for col in required:
-            if col not in df.columns:
-                raise ValueError(f"Missing required column: {col}")
+        self.gaussian_centers = np.linspace(0, cutoff, radius_gaussians)
+        self.gaussian_width = (
+            self.gaussian_centers[1] - self.gaussian_centers[0]
+            if radius_gaussians > 1 else 0.2
+        )
 
-        df = df.dropna(subset=[self.id_col, self.target_col]).copy()
+        df = pd.read_csv(csv_path)
 
-        # Keep only rows with existing CIF files.
-        df["cif_path"] = df[self.id_col].astype(str).apply(lambda mid: os.path.join(cif_dir, f"{mid}.cif"))
+        if self.id_col not in df.columns:
+            raise ValueError(f"Missing required column: {self.id_col}")
+
+        self.has_target = self.target_col in df.columns
+
+        if self.has_target:
+            df = df.dropna(subset=[self.id_col, self.target_col]).copy()
+        else:
+            df = df.dropna(subset=[self.id_col]).copy()
+
+        df["cif_path"] = df[self.id_col].astype(str).apply(
+            lambda mid: os.path.join(cif_dir, f"{mid}.cif")
+        )
         df = df[df["cif_path"].apply(os.path.exists)].reset_index(drop=True)
 
         if len(df) == 0:
             raise ValueError("No valid rows found with matching CIF files.")
 
-        # Sample subset for initial experiment.
         set_seed(seed)
-        if n_samples < len(df):
+        if n_samples is not None and n_samples < len(df):
             df = df.sample(n=n_samples, random_state=seed).reset_index(drop=True)
 
         self.df = df.reset_index(drop=True)
@@ -97,8 +106,8 @@ class GNoMEDataset(Dataset):
 
     def get(self, idx: int) -> Data:
         row = self.df.iloc[idx]
+        material_id = str(row[self.id_col])
         cif_path = row["cif_path"]
-        y = float(row[self.target_col])
 
         structure = Structure.from_file(cif_path)
 
@@ -121,20 +130,25 @@ class GNoMEDataset(Dataset):
                 all_dist.append(d)
 
         if len(all_src) == 0:
-            # fallback for rare edge-less cases
             edge_index = torch.zeros((2, 0), dtype=torch.long)
             edge_attr = torch.zeros((0, len(self.gaussian_centers)), dtype=torch.float)
         else:
             edge_index = torch.tensor([all_src, all_dst], dtype=torch.long)
             dist_array = np.array(all_dist, dtype=np.float32)
-            edge_features = gaussian_distance(dist_array, self.gaussian_centers, self.gaussian_width)
+            edge_features = gaussian_distance(
+                dist_array, self.gaussian_centers, self.gaussian_width
+            )
             edge_attr = torch.tensor(edge_features, dtype=torch.float)
+
+        y_value = float(row[self.target_col]) if self.has_target else 0.0
 
         data = Data(
             x=x,
             edge_index=edge_index,
             edge_attr=edge_attr,
-            y=torch.tensor([y], dtype=torch.float),
+            y=torch.tensor([y_value], dtype=torch.float),
             num_nodes=len(atomic_numbers),
         )
+
+        data.material_id = material_id
         return data
