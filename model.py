@@ -113,3 +113,7 @@ class CGCNNRegressorStrong(nn.Module):
         x = self.pool(x, data.batch)
         x = self.head(x)
         return x.view(-1)
+
+
+# Alias for backwards compatibility with older scripts.
+CGCNNRegressor = CGCNNRegressorStrong
