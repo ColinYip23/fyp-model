@@ -7,3 +7,4 @@ pymatgen
 tqdm
 mp-api
 python-dotenv
+matbench
