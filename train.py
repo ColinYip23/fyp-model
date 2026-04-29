@@ -3,6 +3,7 @@ import random
 from typing import Tuple
 
 import numpy as np
+import pandas as pd
 import torch
 import torch.nn as nn
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
@@ -15,9 +16,6 @@ from model import CGCNNRegressorStrong
 
 
 def set_seed(seed: int = 42) -> None:
-    """
-    Set random seed for reproducibility.
-    """
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -25,10 +23,6 @@ def set_seed(seed: int = 42) -> None:
 
 
 def get_targets(dataset) -> np.ndarray:
-    """
-    Extract all target values from a PyG dataset into a NumPy array.
-    Assumes each sample has a scalar target in data.y.
-    """
     targets = []
     for data in dataset:
         y_val = data.y.view(-1).cpu().numpy()[0]
@@ -37,9 +31,6 @@ def get_targets(dataset) -> np.ndarray:
 
 
 def compute_target_stats(train_dataset) -> Tuple[float, float]:
-    """
-    Compute mean and std of training targets only.
-    """
     train_targets = get_targets(train_dataset)
     mean = float(train_targets.mean())
     std = float(train_targets.std())
@@ -51,25 +42,16 @@ def compute_target_stats(train_dataset) -> Tuple[float, float]:
 
 
 def normalize_targets(dataset, mean: float, std: float):
-    """
-    Normalize targets in-place: y = (y - mean) / std
-    """
     for data in dataset:
         data.y = (data.y - mean) / std
     return dataset
 
 
 def denormalize(values, mean: float, std: float):
-    """
-    Convert normalized predictions/targets back to original scale.
-    """
     return values * std + mean
 
 
 def evaluate(model, loader, device, target_mean, target_std):
-    """
-    Evaluate model on original target scale.
-    """
     model.eval()
     preds = []
     targets = []
@@ -91,15 +73,16 @@ def evaluate(model, loader, device, target_mean, target_std):
     mae = mean_absolute_error(targets, preds)
     rmse = mean_squared_error(targets, preds) ** 0.5
     r2 = r2_score(targets, preds)
+
     return mae, rmse, r2
 
 
 def main():
     set_seed(42)
 
-    csv_path = "data/mp_summary.csv"
+    csv_path = "data/mp_summary_balanced.csv"
     cif_dir = "data/structures"
-    save_path = "model_config.pt"
+    save_path = "model_config_2.pt"
 
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV file not found: {csv_path}")
@@ -107,13 +90,18 @@ def main():
     if not os.path.isdir(cif_dir):
         raise FileNotFoundError(f"CIF directory not found: {cif_dir}")
 
-    # =========================
-    # Dataset
-    # =========================
+    metadata_df = pd.read_csv(csv_path)
+
+    if "label" not in metadata_df.columns:
+        raise ValueError("CSV must contain a 'label' column for stratified splitting.")
+
+    if "energy_above_hull" not in metadata_df.columns:
+        raise ValueError("CSV must contain 'energy_above_hull' as the regression target.")
+
     dataset = GNoMEDataset(
         csv_path=csv_path,
         cif_dir=cif_dir,
-        n_samples=20000,      
+        n_samples=None,
         cutoff=6.0,
         max_neighbors=12,
         radius_gaussians=50,
@@ -126,11 +114,30 @@ def main():
     print(f"Total valid samples: {len(dataset)}")
 
     # =========================
-    # Train / Val / Test split
+    # Stratified Train / Val / Test split
     # =========================
     indices = np.arange(len(dataset))
-    train_idx, temp_idx = train_test_split(indices, test_size=0.2, random_state=42)
-    val_idx, test_idx = train_test_split(temp_idx, test_size=0.5, random_state=42)
+
+    # Important:
+    # This assumes GNoMEDataset keeps the same row order as the CSV
+    # after applying n_samples.
+    labels = metadata_df["label"].values[:len(dataset)]
+
+    train_idx, temp_idx = train_test_split(
+        indices,
+        test_size=0.2,
+        random_state=42,
+        stratify=labels,
+    )
+
+    temp_labels = labels[temp_idx]
+
+    val_idx, test_idx = train_test_split(
+        temp_idx,
+        test_size=0.5,
+        random_state=42,
+        stratify=temp_labels,
+    )
 
     train_dataset = dataset.index_select(train_idx.tolist())
     val_dataset = dataset.index_select(val_idx.tolist())
@@ -140,10 +147,16 @@ def main():
     print(f"Val samples:   {len(val_dataset)}")
     print(f"Test samples:  {len(test_dataset)}")
 
+    print("Label balance:")
+    print("Train:", np.bincount(labels[train_idx].astype(int)))
+    print("Val:  ", np.bincount(labels[val_idx].astype(int)))
+    print("Test: ", np.bincount(labels[test_idx].astype(int)))
+
     # =========================
     # Target normalization
     # =========================
     target_mean, target_std = compute_target_stats(train_dataset)
+
     print(f"Target mean (train only): {target_mean:.6f}")
     print(f"Target std  (train only): {target_std:.6f}")
 
@@ -182,15 +195,9 @@ def main():
         pin_memory=pin_memory,
     )
 
-    # =========================
-    # Device
-    # =========================
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    # =========================
-    # Model
-    # =========================
     model = CGCNNRegressorStrong(
         num_embeddings=100,
         atom_emb_dim=64,
@@ -202,9 +209,6 @@ def main():
 
     print("Model device:", next(model.parameters()).device)
 
-    # =========================
-    # Optimizer / Scheduler / Loss
-    # =========================
     optimizer = torch.optim.AdamW(
         model.parameters(),
         lr=3e-4,
@@ -223,17 +227,11 @@ def main():
     use_amp = torch.cuda.is_available()
     scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
 
-    # =========================
-    # Training config
-    # =========================
     epochs = 100
     patience = 15
     wait = 0
     best_val_mae = float("inf")
 
-    # =========================
-    # Training loop
-    # =========================
     for epoch in range(1, epochs + 1):
         model.train()
         running_loss = 0.0
@@ -247,7 +245,7 @@ def main():
             optimizer.zero_grad()
 
             with torch.cuda.amp.autocast(enabled=use_amp):
-                out = model(batch)
+                out = model(batch).view(-1)
                 loss = criterion(out, target)
 
             scaler.scale(loss).backward()
@@ -255,9 +253,10 @@ def main():
             scaler.update()
 
             running_loss += loss.item() * batch.num_graphs
+
             progress.set_postfix(
                 loss=f"{loss.item():.4f}",
-                lr=f"{optimizer.param_groups[0]['lr']:.2e}"
+                lr=f"{optimizer.param_groups[0]['lr']:.2e}",
             )
 
         train_loss = running_loss / len(train_dataset)
@@ -312,10 +311,8 @@ def main():
                 print("Early stopping triggered.")
                 break
 
-    # =========================
-    # Final test
-    # =========================
     print("\nLoading best checkpoint for final test...")
+
     checkpoint = torch.load(save_path, map_location=device)
     model.load_state_dict(checkpoint["model_state_dict"])
 
